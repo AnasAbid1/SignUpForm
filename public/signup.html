@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>sign-up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .grey {
+        width: 100%;
+        height: 5px;
+        background-color: grey;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body class="dark-mode">
+    <div class="animate__fadeIn">
+        <h1 class="animate__fadeInBottomRight">SIGN-UP.</h1>
+        <div class="grey"></div>
+        <div class="btn">
+            <button onclick="myFunction()">Dark/Light Mode</button>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input type="name" class="form-control" id="firstName" placeholder="First Name...">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input type="name" class="form-control" id="lastName" placeholder="Last Name...">
+
+
+                <div class="form-check">
+                    <p>Gender:</p>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input type="checkbox" onclick="showPass()">Show Password
+        <br />
+        <label for="exampleInputPassword1">Confirm Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input type="checkbox" onclick="showPass()">Show Password
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Confirm your details!</label>
+    </div>
+    <button type="submit" class="btn btn-primary">SIGN-UP</button>
+    <p>Alreadu have an account? <a href="./login.html">Log In</a></p>
+    </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>
